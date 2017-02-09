@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Домашняя работа по лекции №1</h1>
+        <h2>Подготовка :</h2>
+        <p>Создать в своей именной папке новую папку для этой домашней работы. Результаты работы должны находиться в созданной папке</p>
+        <h2>Задания :</h2>
+        <ul>
+            <li>
+                <p>Создать пустой массив</p>
+            </li>
+            <li>
+                <p>Добавить в него 100 целых чисел от 1 до 100 с помощью метода <code>Math.random()</code></p>
+            </li>
+            <li>
+                <p>Написать функцию поиска и вывода в консоль максимального или минимального элемента. Функция должна называться <code>findMinMax</code>, принимать в параметрах массив для поиска и строку, определяющую действие функции. Функция должна возвратить найденный элемент Пример использования функции</p>
+                <p>
+                    <code>
+                        var arrayToFind = [3, 6, 0, -6, 12];<br>
+                        var resultMax = findMinMax(arrayToFind, 'max');<br>
+                        var resultMin = findMinMax(arrayToFind, 'min');<br>
+                        console.log(resultMax); // 12<br>
+                        console.log(resultMin); // -6<br>
+                    </code>
+                </p>
+            </li>
+            <li>
+                <p>Написать функцию преобразования массива в объект вида :</p>
+                <p>
+                    <code>
+                        {<br>
+                        'a' : arr[0],<br>
+                        'b' : arr[1],<br>
+                        ...<br>
+                        '1' : arr[n],<br>
+                        '2' : arr[n+1],<br>
+                        ...<br>
+                        }<br>
+                    </code>
+                </p>
+                <p>где именами полей объекта должны быть буквы латинского алфавита. Когда(если) алфавит закончится, ключи должны начать формироваться в виде цифр, начиная с 1</p>
+                <p>Интерфейс функции</p>
+                <p>
+                    <code>
+                        function convertArrayToObj (array) {<br>
+                        var obj = {};<br>
+                        /* Staff to convert array to obj<br>
+                        //...<br>
+                        */<br>
+                        return obj;<br>
+                        }<br>
+                    </code>
+                </p>
+            </li>
+            <li>
+                <p>Написать функцию фильтрации массива <code>filterNew(arr1, arr2)</code>. Функция должна принимать на вход два массива и удалять из первого массива элементы, которые есть и в первом и во втором массиве. Функция ничего не возвращает, а изменяет напрямую первый массив. Пример использования функции:</p>
+                <p>
+                    <code>
+                        var newData = [2, 12, 22, 6, 32];<br>
+                        var oldData = [12, 5, 7, 17, 22, 32];<br>
+                        filterNew(newData, oldData);<br>
+                        console.log(newData); // in console : [2, 6];<br>
+                    </code>
+                </p>
+            </li>
+        </ul>
+
+        <p>Results will be shown in developer tools console ...</p>
+    </div>
+
+    <script src="js/lesson1.js"></script>
+</body>
+</html>
